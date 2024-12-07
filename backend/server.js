@@ -26,7 +26,7 @@ app.use("/api/issues", issueRoutes);
 // Error handling middleware
 // const errorHandler = require("./middlewares/errorHandler");
 // app.use(errorHandler);
-
+app.get("/", (req, res) => res.send("Hello World!"));
 const PORT = process.env.PORT || 5000;
 const startServer = async () => {
   try {
